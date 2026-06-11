@@ -10,7 +10,13 @@ build-backend = "setuptools.build_meta"
 write_to = "celltransformer/_version.py"
 
 [tool.setuptools]
-packages = ["celltransformer"]
+packages = [
+  "celltransformer",
+  "celltransformer.data",
+  "celltransformer.model",
+  "celltransformer.training",
+  "celltransformer.analysis_utils",
+]
 
 [tool.black]
 target-version = ['py39', 'py310', 'py311']

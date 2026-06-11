@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from torch import nn
 
-from brainformr.data import CenterMaskSampler, collate
+from celltransformer.data import CenterMaskSampler, collate
 
 # from brainformr import __version__ as brainformr_version
 brainformr_version = "1.0"
@@ -111,7 +111,7 @@ class ZhuangTrainer(BaseTrainer):
         return train_loader, valid_loader
 
 @hydra.main(
-    config_path="/home/ajl/work/d2/code/brainformr/scripts/config",
+    config_path="../config",
     config_name="zhuang.yaml",
 )
 def main(config: DictConfig):

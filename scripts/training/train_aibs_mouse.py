@@ -12,7 +12,7 @@ from omegaconf import DictConfig, OmegaConf
 from sklearn.model_selection import train_test_split
 from torch import nn
 
-from brainformr.data import CenterMaskSampler, collate
+from celltransformer.data import CenterMaskSampler, collate
 
 # from brainformr import __version__ as brainformr_version
 brainformr_version = "1.0"
@@ -131,7 +131,7 @@ class AIBSTrainer(BaseTrainer):
 
 
 @hydra.main(
-    config_path="/home/ajl/work/d2/code/brainformr/scripts/config",
+    config_path="../config",
     config_name="aibs1.yaml",
 )
 def main(config: DictConfig):

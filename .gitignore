@@ -95,3 +95,9 @@ cluster_and_visualize.pdf
 *.pth
 scripts/aibs-embeds.pth
 something.ipynb
+
+# large data and generated output
+*.h5ad
+*.h5
+.venv/
+inference_output/

@@ -17,8 +17,8 @@ from scvi.distributions import ZeroInflatedNegativeBinomial
 from sklearn.preprocessing import LabelEncoder
 from torch import optim
 
-from brainformr.analysis_utils.crosscorr import corr_predictions
-from brainformr.training.scheduler import get_inverse_sqrt_schedule_with_plateau
+from celltransformer.analysis_utils.crosscorr import corr_predictions
+from celltransformer.training.scheduler import get_inverse_sqrt_schedule_with_plateau
 
 
 def get_timestamp():
